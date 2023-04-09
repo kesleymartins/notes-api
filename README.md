@@ -1,24 +1,45 @@
-# README
+# Notes App - API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+#### Tecnologias
+---
 
-* Ruby version
+[ruby 3.2.1](https://www.ruby-lang.org/pt/)
 
-* System dependencies
+[rails 7.0.4](https://rubyonrails.org/)
 
-* Configuration
+[sqlite](https://www.sqlite.org/index.html)
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+#### Endpoints
+---
+```sh
+# GET /notes
+retorna lista de notas
 
-* Services (job queues, cache servers, search engines, etc.)
+# POST /notes/:id
+cria uma nota
 
-* Deployment instructions
+# PUT /notes/:id
+atualiza uma nota e retorna lista atualizada
 
-* ...
+# DELETE /notes/:id
+remote uma nota
+```
+
+
+
+#### Configuração do projeto
+
+---
+```sh
+# Instala as dependências
+bundle install
+
+# roda as migrações
+rails db:migrate
+
+# abre o servidor
+rails s
+```
