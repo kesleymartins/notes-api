@@ -1,13 +1,9 @@
 class NotesController < ApplicationController
-  before_action :set_note, only: %i[show update destroy]
+  before_action :set_note, only: %i[update destroy]
 
   def index
     notes = Note.all.order_by_latest
     render json: notes
-  end
-
-  def show
-    render json: @note
   end
 
   def create
