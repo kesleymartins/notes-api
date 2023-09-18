@@ -3,11 +3,8 @@
 
 #### Tecnologias
 ---
-
-[ruby 3.2.1](https://www.ruby-lang.org/pt/)
-
-[rails 7.0.4](https://rubyonrails.org/)
-
+[ruby](https://www.ruby-lang.org/pt/)
+[rails](https://rubyonrails.org/)
 [sqlite](https://www.sqlite.org/index.html)
 
 
